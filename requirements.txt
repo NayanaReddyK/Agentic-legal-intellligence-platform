@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+langgraph
+chromadb
+sentence-transformers
+rank-bm25
+pymupdf
+python-docx
+streamlit
+openai
