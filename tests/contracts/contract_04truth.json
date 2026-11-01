@@ -1,0 +1,83 @@
+{
+  "contract": "contract_04.txt",
+  "planted_issues": [
+    {
+      "id": "I1",
+      "clause": "3",
+      "type": "termination",
+      "severity": "medium",
+      "basis": "commercial",
+      "keywords": [
+        "one-sided",
+        "unbalanced",
+        "imbalance",
+        "unequal",
+        "immediately",
+        "without reason",
+        "work in progress",
+        "ninety days",
+        "90 days"
+      ],
+      "why": "Company can terminate immediately and owes nothing for work in progress; consultant needs 90 days",
+      "statute": []
+    },
+    {
+      "id": "I2",
+      "clause": "6",
+      "type": "non_compete",
+      "severity": "high",
+      "basis": "statutory",
+      "keywords": [
+        "non-compete",
+        "restraint",
+        "compete",
+        "post-term",
+        "three years",
+        "3 years",
+        "automotive"
+      ],
+      "why": "3-year post-term restraint across India is void under s.27",
+      "statute": [
+        "Indian Contract Act s.27"
+      ]
+    },
+    {
+      "id": "I3",
+      "clause": "7",
+      "type": "penalty",
+      "severity": "high",
+      "basis": "statutory",
+      "keywords": [
+        "penalty",
+        "forfeit",
+        "regardless",
+        "rs. 2,00,000",
+        "per week",
+        "each week",
+        "delay"
+      ],
+      "why": "Forfeiture plus Rs 2 lakh per week regardless of loss is a penalty under s.74",
+      "statute": [
+        "Indian Contract Act s.74"
+      ]
+    },
+    {
+      "id": "I4",
+      "clause": "9",
+      "type": "arbitration",
+      "severity": "medium",
+      "basis": "commercial",
+      "keywords": [
+        "unilateral",
+        "managing director",
+        "appointed by the company",
+        "one party",
+        "independen",
+        "impartial"
+      ],
+      "why": "Sole arbitrator appointed by the Company's own Managing Director (unilateral appointment turns on case law, not in corpus)",
+      "statute": []
+    }
+  ],
+  "note": "Clauses 2,4,5,8,10,11 are deliberately fine. Clause 5 (in-term) and clause 8 (capped indemnity) are the tricky controls."
+}

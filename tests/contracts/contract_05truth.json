@@ -1,0 +1,84 @@
+{
+  "contract": "contract_05.txt",
+  "planted_issues": [
+    {
+      "id": "I1",
+      "clause": "3",
+      "type": "termination",
+      "severity": "medium",
+      "basis": "commercial",
+      "keywords": [
+        "one-sided",
+        "unbalanced",
+        "imbalance",
+        "unequal",
+        "lock-in",
+        "may not terminate",
+        "automatic",
+        "renew",
+        "thirty days"
+      ],
+      "why": "Distributor locked in for 5 years with auto-renewal; Supplier can exit on 30 days notice",
+      "statute": []
+    },
+    {
+      "id": "I2",
+      "clause": "4",
+      "type": "penalty",
+      "severity": "high",
+      "basis": "statutory",
+      "keywords": [
+        "penalty",
+        "liquidated",
+        "regardless",
+        "actual loss",
+        "minimum"
+      ],
+      "why": "Fixed Rs 10 lakh per quarter regardless of actual loss is a penalty under s.74",
+      "statute": [
+        "Indian Contract Act s.74"
+      ]
+    },
+    {
+      "id": "I3",
+      "clause": "6",
+      "type": "non_compete",
+      "severity": "high",
+      "basis": "statutory",
+      "keywords": [
+        "non-compete",
+        "restraint",
+        "compete",
+        "competing",
+        "post-termination",
+        "two years",
+        "2 years"
+      ],
+      "why": "2-year post-termination restraint across India is void under s.27",
+      "statute": [
+        "Indian Contract Act s.27"
+      ]
+    },
+    {
+      "id": "M1",
+      "clause": null,
+      "type": "missing_confidentiality",
+      "severity": "medium",
+      "basis": "commercial",
+      "keywords": [],
+      "why": "No confidentiality clause",
+      "statute": []
+    },
+    {
+      "id": "M2",
+      "clause": null,
+      "type": "missing_governing_law",
+      "severity": "medium",
+      "basis": "commercial",
+      "keywords": [],
+      "why": "No governing law or jurisdiction clause",
+      "statute": []
+    }
+  ],
+  "note": "Clauses 1,2,5,7,8 are deliberately fine. Clause 5 (in-term) and clause 7 (mutual capped indemnity) are the tricky controls."
+}

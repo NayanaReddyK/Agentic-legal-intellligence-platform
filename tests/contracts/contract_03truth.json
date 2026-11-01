@@ -1,0 +1,94 @@
+{
+  "contract": "contract_03.txt",
+  "planted_issues": [
+    {
+      "id": "I1",
+      "clause": "3",
+      "type": "termination",
+      "severity": "medium",
+      "basis": "commercial",
+      "keywords": [
+        "auto",
+        "renew",
+        "180",
+        "convenience",
+        "one-sided",
+        "unbalanced",
+        "seven days"
+      ],
+      "why": "Auto-renewal for 3-year terms with 180-day notice; customer can exit on 7 days, vendor cannot",
+      "statute": []
+    },
+    {
+      "id": "I2",
+      "clause": "4",
+      "type": "penalty",
+      "severity": "high",
+      "basis": "statutory",
+      "keywords": [
+        "penalty",
+        "liquidated",
+        "two percent",
+        "2%",
+        "uncapped",
+        "no cap",
+        "without any cap",
+        "whether or not"
+      ],
+      "why": "2% of total fees per day, uncapped, whether or not loss suffered: penalty under s.74",
+      "statute": [
+        "Indian Contract Act s.74"
+      ]
+    },
+    {
+      "id": "I3",
+      "clause": "6",
+      "type": "indemnity",
+      "severity": "high",
+      "basis": "commercial",
+      "keywords": [
+        "unlimited",
+        "uncapped",
+        "without limit",
+        "one-sided",
+        "no limit",
+        "no cap"
+      ],
+      "why": "Unlimited one-sided indemnity",
+      "statute": [
+        "Indian Contract Act s.124",
+        "Indian Contract Act s.125"
+      ]
+    },
+    {
+      "id": "I4",
+      "clause": "7",
+      "type": "non_compete",
+      "severity": "high",
+      "basis": "statutory",
+      "keywords": [
+        "non-compete",
+        "restraint",
+        "compete",
+        "five years",
+        "5 years",
+        "after this agreement"
+      ],
+      "why": "5-year post-term restraint on vendor is void under s.27 (the in-term part is the arguable part)",
+      "statute": [
+        "Indian Contract Act s.27"
+      ]
+    },
+    {
+      "id": "M1",
+      "clause": null,
+      "type": "missing_confidentiality",
+      "severity": "medium",
+      "basis": "commercial",
+      "keywords": [],
+      "why": "No confidentiality clause",
+      "statute": []
+    }
+  ],
+  "note": "Clauses 2,5,8,9,10 are deliberately fine (controls)."
+}

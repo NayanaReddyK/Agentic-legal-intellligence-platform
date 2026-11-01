@@ -1,0 +1,190 @@
+[
+  {
+    "clause_id": "C3",
+    "clause_heading": "Termination",
+    "type": "termination",
+    "has_issue": true,
+    "basis": "commercial",
+    "severity": "medium",
+    "issue": "Unequal notice periods",
+    "explanation": "The clause allows the Company to terminate with only 7 days\u2019 notice, while the Employee must give 90 days\u2019 notice and cannot be released earlier without consent, creating an imbalance.",
+    "suggested_fix": "Equalize notice periods or provide mutual termination rights with reasonable notice.",
+    "confidence": "high",
+    "supporting_quote": "",
+    "evidence": {
+      "Arbitration and Conciliation Act s.76": "Arbitration and Conciliation Act 1996, section 76: Termination of conciliation proceedings\n76. Termination of conciliation proceedings.\u2014The conciliation proceedings shall be terminated\u2014\n\n        (a) by the signing of the settlement agreement by the parties, on the date of the agreement; or\n\n        (b) by a written declaration of the conciliator, after consultation with the parties, to the effect that\n    further efforts at conciliation are no longer justified, on the date of the declaration; or\n\n         (c) by a written declaration of the parties addressed to the conciliator to the effect that the\n    conciliation proceedings are terminated, on the date of the declaration; or\n\n        (d) by a written declaration of a party to the other party and the conciliator, if appointed, to the\n    effect that the conciliation proceedings are terminated, on the date of the declaration.",
+      "Indian Contract Act s.208": "Indian Contract Act 1872, section 208: When termination of agent\u2019s authority takes effect as to agent, and as to third persons\n208.When termination of agent\u2019s authority takes effect as to agent, and as to third persons.\u2014\nThe termination of the authority of an agent does not, so far as regards the agent, take effect before it\nbecomes known to him, or, so far as regards third persons, before it becomes known to them.\n\n                                                  Illustrations\n\n     (a) A directs B to sell goods for him, and agrees to give B five per cent. commission on the price fetched by the goods. A\nafterwards, by letter, revoke B\u2019s authority. B, after the letter is sent, but before he receives it, sells the goods for 100 rupees. The\nsale is binding on A, and B is entitled to five rupees as his commission.\n\n     (b) A, at Madras, by letter, directs B to sell for him some cotton lying in a warehouse in Bombay, and afterwards, by letter,\nrevokes his authority to sell, and directs B to send the cotton to Madras. B, after receiving the second letter, enters into a contract\nwith C, who knows of the first letter, but not of the second, for the sale to him of the cotton. C pays B th",
+      "Arbitration and Conciliation Act s.43F": "Arbitration and Conciliation Act 1996, section 43F: Resignation of Members\n43F. Resignation of Members.\u2014The Chairperson or the Full-time or Part-time Member may, by\nnotice in writing, under his hand addressed to the Central Government, resign his office:\n\n    Provided that the Chairperson or the Full-time Member shall, unless he is permitted by the Central\nGovernment to relinquish his office sooner, continue to hold office until the expiry of three months from\nthe date of receipt of such notice or until a person duly appointed as his successor enters upon his office\nor until the expiry of his term of office, whichever is earlier."
+    },
+    "citations": [],
+    "retrieved": [
+      "Arbitration and Conciliation Act s.76",
+      "Indian Contract Act s.208",
+      "Arbitration and Conciliation Act s.43F"
+    ],
+    "dropped_citations": [],
+    "quote_verified": false,
+    "overstated": false,
+    "reviewer_note": "No sources cited. The claim is a factual observation of the clause text, not a legal conclusion requiring external support.",
+    "status": "commercial_risk"
+  },
+  {
+    "clause_id": "C5",
+    "clause_heading": "Exclusivity During Employment",
+    "type": "non_compete",
+    "has_issue": true,
+    "basis": "statutory",
+    "severity": "high",
+    "issue": "Unreasonable restraint of trade",
+    "explanation": "The clause bars the employee from any other employment or business without consent, which is a restraint of trade and void under Indian law.",
+    "suggested_fix": "Limit the restriction to specific activities, provide a reasonable duration, and include a notice period for consent.",
+    "confidence": "low",
+    "supporting_quote": "Every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void.",
+    "evidence": {
+      "Indian Contract Act s.27": "Indian Contract Act 1872, section 27: Agreement in restraint of trade, void\n27. Agreement in restraint of trade, void.\u2014Every agreement by which any one is restrained from\nexercising a lawful profession, trade or business of any kind, is to that extent void.\n    Exception 1.\u2014Saving of agreement not to carry on business of which good-will is sold.\u2014One\nwho sells the good-will of a business may agree with the buyer to refrain from carrying on a similarbusiness, within specified local limits, so long as the buyer, or any person deriving title to the good-will\nfrom him, carries on a like business therein, provided that such limits appear to the Court reasonable,\nregard being had to the nature of the business.\n    1*               *                   *                   *       *.",
+      "Indian Contract Act s.224": "Indian Contract Act 1872, section 224: Non-liability of employer of agent to do a criminal act\n224.Non-liability of employer of agent to do a criminal act.\u2014Where one person employs another\nto do an act which is criminal, the employer is not liable to the agent, either upon an express or an implied\npromise, to indemnify him against the consequences of that Act1.\n\n                                                  Illustrations\n\n     (a) A employs B to beat C, and agrees to indemnify him against all consequences of the act. B thereupon beats C, and has to\npay damages to C for so doing. A is not liable to indemnify B for those damages.     (b)B, the proprietor of a newspaper, publishes, at A\u2019s request, a libel upon C in the paper, and A agrees to indemnify B\nagainst the consequences of the publication, and all costs and damages of any action in respect thereof. B is sued by C and has to\npay damages, and also incurs expenses. A is not liable to B upon the indemnity."
+    },
+    "citations": [
+      {
+        "act": "Indian Contract Act",
+        "section": "27",
+        "title": "Agreement in restraint of trade, void",
+        "ref": "Indian Contract Act s.27",
+        "verdict": "related"
+      }
+    ],
+    "retrieved": [
+      "Indian Contract Act s.27",
+      "Indian Contract Act s.224"
+    ],
+    "dropped_citations": [],
+    "quote_verified": true,
+    "overstated": true,
+    "reviewer_note": "Section 27 voids restraints on lawful professions. A clause restricting concurrent employment during the term is generally valid and not a restraint of trade under s.27.",
+    "status": "commercial_risk"
+  },
+  {
+    "clause_id": "C6",
+    "clause_heading": "Post-Employment Restriction",
+    "type": "non_compete",
+    "has_issue": true,
+    "basis": "statutory",
+    "severity": "high",
+    "issue": "Restraint of trade clause void",
+    "explanation": "Clause bars employee from competing for 24 months, which is void under Indian law as a restraint of trade.",
+    "suggested_fix": "Limit duration to 12 months, narrow scope to specific business area, and provide adequate consideration.",
+    "confidence": "high",
+    "supporting_quote": "Every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void.",
+    "evidence": {
+      "Indian Contract Act s.27": "Indian Contract Act 1872, section 27: Agreement in restraint of trade, void\n27. Agreement in restraint of trade, void.\u2014Every agreement by which any one is restrained from\nexercising a lawful profession, trade or business of any kind, is to that extent void.\n    Exception 1.\u2014Saving of agreement not to carry on business of which good-will is sold.\u2014One\nwho sells the good-will of a business may agree with the buyer to refrain from carrying on a similarbusiness, within specified local limits, so long as the buyer, or any person deriving title to the good-will\nfrom him, carries on a like business therein, provided that such limits appear to the Court reasonable,\nregard being had to the nature of the business.\n    1*               *                   *                   *       *.",
+      "Indian Contract Act s.224": "Indian Contract Act 1872, section 224: Non-liability of employer of agent to do a criminal act\n224.Non-liability of employer of agent to do a criminal act.\u2014Where one person employs another\nto do an act which is criminal, the employer is not liable to the agent, either upon an express or an implied\npromise, to indemnify him against the consequences of that Act1.\n\n                                                  Illustrations\n\n     (a) A employs B to beat C, and agrees to indemnify him against all consequences of the act. B thereupon beats C, and has to\npay damages to C for so doing. A is not liable to indemnify B for those damages.     (b)B, the proprietor of a newspaper, publishes, at A\u2019s request, a libel upon C in the paper, and A agrees to indemnify B\nagainst the consequences of the publication, and all costs and damages of any action in respect thereof. B is sued by C and has to\npay damages, and also incurs expenses. A is not liable to B upon the indemnity."
+    },
+    "citations": [
+      {
+        "act": "Indian Contract Act",
+        "section": "27",
+        "title": "Agreement in restraint of trade, void",
+        "ref": "Indian Contract Act s.27",
+        "verdict": "supports"
+      }
+    ],
+    "retrieved": [
+      "Indian Contract Act s.27",
+      "Indian Contract Act s.224"
+    ],
+    "dropped_citations": [],
+    "quote_verified": true,
+    "overstated": false,
+    "reviewer_note": "Section 27 explicitly voids agreements restraining a person from exercising a lawful profession or business, which covers post-employment non-compete clauses.",
+    "status": "verified"
+  },
+  {
+    "clause_id": "C7",
+    "clause_heading": "Training Bond",
+    "type": "penalty_liquidated_damages",
+    "has_issue": true,
+    "basis": "statutory",
+    "severity": "medium",
+    "issue": "Penalty clause for resignation",
+    "explanation": "The clause requires the employee to pay Rs. 6,00,000 regardless of actual training cost, which may be treated as a penalty under section 74 of the Indian Contract Act.",
+    "suggested_fix": "Limit the payment to actual training cost or a reasonable amount, and provide a notice period and procedure for resignation.",
+    "confidence": "medium",
+    "supporting_quote": "reasonable compensation not exceeding the amount so named",
+    "evidence": {
+      "Indian Contract Act s.74": "Indian Contract Act 1872, section 74: Compensation for breach of contract where penalty stipulated for\n74. Compensation for breach of contract where penalty stipulated for.\u20141[When a contract has\nbeen broken, if a sum is named in the contract as the amount to be paid in case of such breach, or if the\ncontract contains any other stipulation by way of penalty, the party complaining of the breach is entitled,\nwhether or not actual damage or loss is proved to have been caused thereby, to receive from the party who\nhas broken the contract reasonable compensation not exceeding the amount so named or, as the case maybe, the penalty stipulated for.       \n   Explanation.\u2014A stipulation for increased interest from the date of default may be a stipulation by\nway of penalty.]\n   Exception.\u2014When any person enters into any bail-bond, recognizance or other instrument of the\nsame nature, or, under the provisions of any law, or under the orders of the 2[Central Government] or of\nany 3[State Government], gives any bond for the performance of any public duty or act in which the\npublic are interested, he shall be liable, upon breach of the condition of any such instrument, to pay the\nwhole sum mentione"
+    },
+    "citations": [
+      {
+        "act": "Indian Contract Act",
+        "section": "74",
+        "title": "Compensation for breach of contract where penalty stipulated for",
+        "ref": "Indian Contract Act s.74",
+        "verdict": "supports"
+      }
+    ],
+    "retrieved": [
+      "Indian Contract Act s.74"
+    ],
+    "dropped_citations": [],
+    "quote_verified": true,
+    "overstated": false,
+    "reviewer_note": "Section 74 applies to stipulations by way of penalty. A fixed sum irrespective of actual loss is a classic penalty scenario under this section.",
+    "status": "verified"
+  },
+  {
+    "clause_id": "C8",
+    "clause_heading": "Indemnity",
+    "type": "indemnity",
+    "has_issue": false,
+    "basis": "commercial",
+    "severity": "none",
+    "issue": "",
+    "explanation": "",
+    "suggested_fix": "",
+    "confidence": "high",
+    "supporting_quote": "",
+    "evidence": {
+      "Indian Contract Act s.124": "Indian Contract Act 1872, section 124: \u201cContract of indemnity\u201d defined\n124.\u201cContract of indemnity\u201d defined.\u2014A contract by which one party promises to save the other\nfrom loss caused to him by the conduct of the promisor himself, or by the conduct of any other person, is\ncalled a \u201ccontract of indemnity\u201d.\n\n                                                   Illustration\n\n   A contracts to indemnify B against the consequences of any proceedings which C may take against B in respect of a certain\nsum of 200 rupees. This is a contract of indemnity.",
+      "Indian Contract Act s.125": "Indian Contract Act 1872, section 125: Rights of indemnity-holder when sued\n125.Rights of indemnity-holder when sued.\u2014The promisee in a contract of indemnity, acting\nwithin the scope of his authority, is entitled to recover from the promisor\u2014\n\n        (1) all damages which he may be compelled to pay in any suit in respect of any matter to which\n    the promise to indemnify applies;\n\n        (2) all costs which he may be compelled to pay in any such suit if, in bringing or defending it, he\n    did not contravene the orders of the promisor, and acted as it would have been prudent for him to act    in the absence of any contract of indemnity, or if the promisor authorized him to bring or defend the\n     suit;\n\n        (3) all sums which he may have paid under the terms of any compromise of any such suit, if the\n   compromise was not contrary to the orders of the promisor, and was one which it would have been\n    prudent for the promisee to make in the absence of any contract of indemnity, or if the promisor\n    authorized him to compromise the suit.",
+      "Indian Contract Act s.224": "Indian Contract Act 1872, section 224: Non-liability of employer of agent to do a criminal act\n224.Non-liability of employer of agent to do a criminal act.\u2014Where one person employs another\nto do an act which is criminal, the employer is not liable to the agent, either upon an express or an implied\npromise, to indemnify him against the consequences of that Act1.\n\n                                                  Illustrations\n\n     (a) A employs B to beat C, and agrees to indemnify him against all consequences of the act. B thereupon beats C, and has to\npay damages to C for so doing. A is not liable to indemnify B for those damages.     (b)B, the proprietor of a newspaper, publishes, at A\u2019s request, a libel upon C in the paper, and A agrees to indemnify B\nagainst the consequences of the publication, and all costs and damages of any action in respect thereof. B is sued by C and has to\npay damages, and also incurs expenses. A is not liable to B upon the indemnity."
+    },
+    "citations": [],
+    "retrieved": [
+      "Indian Contract Act s.124",
+      "Indian Contract Act s.125",
+      "Indian Contract Act s.224"
+    ],
+    "status": "no_issue"
+  },
+  {
+    "clause_id": "C9",
+    "clause_heading": "Dispute Resolution",
+    "type": "arbitration",
+    "has_issue": false,
+    "basis": "none",
+    "severity": "none",
+    "issue": "",
+    "explanation": "",
+    "suggested_fix": "",
+    "confidence": "high",
+    "supporting_quote": "",
+    "evidence": {
+      "Arbitration and Conciliation Act s.7": "Arbitration and Conciliation Act 1996, section 7: Arbitration agreement\n7. Arbitration agreement.\u2014(1) In this Part, \u201carbitration agreement\u201d means an agreement by the\nparties to submit to arbitration all or certain disputes which have arisen or which may arise between them\nin respect of a defined legal relationship, whether contractual or not.\n\n    (2) An arbitration agreement may be in the form of an arbitration clause in a contract or in the form of\na separate agreement.\n\n    (3) An arbitration agreement shall be in writing.\n\n    (4) An arbitration agreement is in writing if it is contained in\u2014\n\n        (a) a document signed by the parties;\n        (b) an exchange of letters, telex, telegrams or other means of telecommunication 1[including\n   communication through electronic means] which provide a record of the agreement; or\n         (c) an exchange of statements of claim and defence in which the existence of the agreement is\n    alleged by one party and not denied by the other.\n\n    (5) The reference in a contract to a document containing an arbitration clause constitutes an\narbitration agreement if the contract is in writing and the reference is such as to make that arbitration\n",
+      "Arbitration and Conciliation Act s.10": "Arbitration and Conciliation Act 1996, section 10: Number of arbitrators\n10. Number of arbitrators.\u2014(1) The parties are free to determine the number of arbitrators,\nprovided that such number shall not be an even number.\n\n    (2) Failing the determination referred to in sub-section (1), the arbitral tribunal shall consist of a sole\narbitrator.",
+      "Arbitration and Conciliation Act s.11": "Arbitration and Conciliation Act 1996, section 11: Appointment of arbitrators\n11. Appointment of arbitrators.\u2014(1) A person of any nationality may be an arbitrator, unless\notherwise agreed by the parties.\n\n    (2) Subject to sub-section (6), the parties are free to agree on a procedure for appointing the arbitrator\nor arbitrators.\n\n    (3) Failing any agreement referred to in sub-section (2), in an arbitration with three arbitrators, each\nparty shall appoint one arbitrator, and the two appointed arbitrators shall appoint the third arbitrator who\nshall act as the presiding arbitrator.\n\n    (4) If the appointment procedure in sub-section (3) applies and\u2014\n\n        (a) a party fails to appoint an arbitrator within thirty days from the receipt of a request to do so\n   from the other party; or\n\n        (b) the two appointed arbitrators fail to agree on the third arbitrator within thirty days from the\n    date of their appointment,",
+      "Arbitration and Conciliation Act s.12": "Arbitration and Conciliation Act 1996, section 12: Grounds for challenge\n12. Grounds for challenge.\u20144[(1) When a person is approached in connection with his possible\nappointment as an arbitrator, he shall disclose in writing any circumstances,\u2014\n        (a) such as the existence either direct or indirect, of any past or present relationship with or\n    interest in any of the parties or in relation to the subject-matter in dispute, whether financial, business,\n    professional or other kind, which is likely to give rise to justifiable doubts as to his independence or\n    impartiality; and\n        (b) which are likely to affect his ability to devote sufficient time to the arbitration and in\n    particular his ability to complete the entire arbitration within a period of twelve months.\n    Explanation 1.\u2014The grounds stated in the Fifth Schedule shall guide in determining whether\ncircumstances exist which give rise to justifiable doubts as to the independence or impartiality of an\narbitrator.\n    Explanation 2.\u2014The disclosure shall be made by such person in the form specified in the Sixth\nSchedule.]\n    (2) An arbitrator, from the time of his appointment and throughout the arbitral proc",
+      "Arbitration and Conciliation Act s.20": "Arbitration and Conciliation Act 1996, section 20: Place of arbitration\n20. Place of arbitration.\u2014(1) The parties are free to agree on the place of arbitration.\n    (2) Failing any agreement referred to in sub-section (1), the place of arbitration shall be determined\nby the arbitral tribunal having regard to the circumstances of the case, including the convenience of the\nparties.\n    (3) Notwithstanding sub-section (1) or sub-section (2), the arbitral tribunal may, unless otherwise\nagreed by the parties, meet at anyplace it considers appropriate for consultation among its members, for\nhearing witnesses, experts or the parties, or for inspection of documents, goods or other property.",
+      "Arbitration and Conciliation Act s.1": "Arbitration and Conciliation Act 1996, section 1: S. 9 shall be renumbered as sub-section (1) thereof by s. 5, Act 3 of 2016 (w.e.f. 23-10-2015)\n5[the Supreme Court or the person or institution designated by that Court] may appoint an arbitrator of a\nnationality other than the nationalities of the parties where the parties belong to different nationalities.\n    6[(10) The Supreme Court or, as the case may be, the High Court, may make such scheme as the said\nCourt may deem appropriate for dealing with matters entrusted by sub-section (4) or sub-section (5) or\nsub-section (6), to it.]\n    (11) Where more than one request has been made under sub-section (4) or sub-section (5) or\nsub-section (6) to the Chief Justices of different High Courts or their designates, 7[different High Courts\nor their designates, the High Court or its designate to whom the request has been first made] under the\nrelevant sub-section shall alone be competent to decide on the request.\n  whom the request has been first made\u201d (w.e.f 23-10-2015).\n    1[(12) (a) Where the matters referred to in sub-sections (4), (5), (6), (7), (8) and sub-section (10) arise\nin an international commercial arbitration, the reference t"
+    },
+    "citations": [],
+    "retrieved": [
+      "Arbitration and Conciliation Act s.7",
+      "Arbitration and Conciliation Act s.10",
+      "Arbitration and Conciliation Act s.11",
+      "Arbitration and Conciliation Act s.12",
+      "Arbitration and Conciliation Act s.20",
+      "Arbitration and Conciliation Act s.1"
+    ],
+    "status": "no_issue"
+  }
+]

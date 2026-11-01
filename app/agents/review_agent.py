@@ -9,7 +9,7 @@ SEV_ORDER = {"high": 0, "medium": 1, "low": 2, "none": 3}
 SYSTEM = (
     "You are an independent senior legal reviewer checking another assistant's findings about an Indian contract. "
     "Be strict. A source only 'supports' a claim if its own words establish that claim for the facts in the clause. "
-    "Reply with JSON only."
+    "Read the clause text yourself and check the claim against it. Reply with JSON only."
 )
 
 
@@ -38,17 +38,22 @@ def _check_applicability(todo: list[dict], clause_text: dict) -> dict:
     blocks = []
     for i, f in enumerate(todo):
         cites = "\n".join(f"  - {c['ref']}: {f['evidence'].get(c['ref'], '')[:700]}" for c in f["citations"]) or "  (none)"
-        blocks.append(f"FINDING {i}\nClause text: {clause_text.get(f['clause_id'], '')[:600]}\n"
+        blocks.append(f"FINDING {i}\nClause text:\n{clause_text.get(f['clause_id'], '')[:1200]}\n"
                       f"Claim: {f['issue']}. {f['explanation']}\nCited sources:\n{cites}")
     prompt = f"""Check each finding.
-For every cited source give a verdict:
- "supports"   = the source's own words establish the claim for the facts actually in the clause
- "related"    = same topic, but it does not establish the claim
- "irrelevant" = about something else, or depends on facts the clause does not contain
-Also set "overstated": true if the claim says more than the sources support (for example calling a clause
-void or unenforceable, or adding a legal test that is not in the sources).
 
-Return a JSON list: [{{"i": int, "citations": [{{"ref": str, "verdict": str}}], "overstated": bool, "note": "max 30 words"}}]
+1. "claim_matches_clause": true only if the claim correctly describes what the clause says, including WHICH
+   PARTY is favoured or burdened and what each sub-clause actually provides. Re-read the clause; do not assume.
+2. For every cited source give a verdict:
+   "supports"   = the source's own words establish the claim for the facts actually in the clause
+   "related"    = same topic, but it does not establish the claim
+   "irrelevant" = about something else, or depends on facts the clause does not contain
+3. "overstated": true if the claim says more than the sources support (for example calling a clause void or
+   unenforceable, or adding a legal test not in the sources), OR if you believe the legal conclusion is wrong
+   or contested for this kind of clause.
+
+Return a JSON list: [{{"i": int, "claim_matches_clause": bool, "citations": [{{"ref": str, "verdict": str}}],
+"overstated": bool, "note": "max 30 words"}}]
 
 {chr(10).join(blocks)}"""
     out = extract_json(cached_ask(prompt, system=SYSTEM, max_tokens=4000, model=llm.REVIEW_MODEL))
@@ -83,14 +88,19 @@ def review(findings: list[dict], clauses: list[dict]) -> list[dict]:
         f["citations"], f["dropped_citations"] = kept, dropped
         f["quote_verified"] = quote_verified(f)
         f["overstated"] = bool(res.get("overstated"))
+        f["claim_matches_clause"] = res.get("claim_matches_clause", True) is not False
         f["reviewer_note"] = res.get("note", "")
-        if f["overstated"]:
-            f["confidence"] = "low"
         supported = any(c["verdict"] == "supports" for c in kept)
-        if supported and f["quote_verified"] and not f["overstated"]:
+        if not f["claim_matches_clause"] or (f["overstated"] and not supported):
+            f["status"] = "disputed"                      # reviewer thinks the finding is wrong: demote, keep for transparency
+            f["original_severity"] = f["severity"]
+            f["severity"], f["confidence"] = "low", "low"
+        elif supported and f["quote_verified"] and not f["overstated"]:
             f["status"] = "verified"
         elif supported:
             f["status"] = "needs_review"
+            if f["overstated"]:
+                f["confidence"] = "low"
         else:
             f["status"] = "commercial_risk"          # real concern, but no statute directly establishes it
     return findings
@@ -101,13 +111,14 @@ STATUS_TEXT = {
     "needs_review": "Needs lawyer review: statute is relevant, but the reviewer flagged the wording or the quote.",
     "commercial_risk": "Risk observation: no cited statute directly establishes this. Lawyer to judge.",
     "rule_based": "Gap detected by rule: expected clause is absent.",
+    "disputed": "Disputed: the reviewer believes this finding is inaccurate or overstated. Shown for transparency only.",
     "unchecked": "Not checked: the review step failed.",
 }
 
 
 def build_report(meta: dict, findings: list[dict]) -> dict:
     issues = [f for f in findings if f.get("has_issue") is not False]
-    issues.sort(key=lambda f: (SEV_ORDER.get(f["severity"], 3), f["clause_id"] or "Z"))
+    issues.sort(key=lambda f: (f["status"] == "disputed", SEV_ORDER.get(f["severity"], 3), f["clause_id"] or "Z"))
     return {"contract_type": meta.get("contract_type"), "parties": meta.get("parties"),
             "counts": dict(Counter(f["status"] for f in issues)), "findings": issues}
 
@@ -118,13 +129,14 @@ def render_markdown(report: dict) -> str:
          f"Status counts: {report['counts']}", ""]
     for f in report["findings"]:
         where = f"Clause {f['clause_id'][1:]} ({f['clause_heading']})" if f["clause_id"] else "Whole contract"
-        L += [f"## [{f['severity'].upper()}] {f['issue']}", f"**{where}**  |  confidence: {f['confidence']}", "",
+        tag = "DISPUTED" if f["status"] == "disputed" else f["severity"].upper()
+        L += [f"## [{tag}] {f['issue']}", f"**{where}**  |  confidence: {f['confidence']}", "",
               f["explanation"], "", f"**Suggested fix:** {f['suggested_fix']}", ""]
         if f["citations"]:
             L.append("**Sources:** " + "; ".join(c["ref"] for c in f["citations"]))
         L.append(f"**Review status:** {STATUS_TEXT.get(f['status'], f['status'])}")
-        if f.get("overstated"):
-            L.append("**warning:** the reviewer judged this explanation overstated. Treat the legal claim with caution.")
+        if f.get("overstated") and f["status"] != "disputed":
+            L.append("**Warning:** the reviewer judged this explanation overstated. Treat the legal claim with caution.")
         if f.get("reviewer_note"):
             L.append(f"**Reviewer note:** {f['reviewer_note']}")
         if f.get("dropped_citations"):

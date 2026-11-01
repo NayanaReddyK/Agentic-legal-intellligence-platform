@@ -1,0 +1,45 @@
+SOFTWARE SERVICES AGREEMENT
+
+This Agreement is made on 20 January 2026 at New Delhi between:
+
+(1) ZENITH RETAIL PRIVATE LIMITED, a company incorporated under the Companies Act, 2013, having its registered office at 5 Nehru Place, New Delhi 110019 (the "Customer"); and
+
+(2) CODEFORGE SOLUTIONS LLP, a limited liability partnership having its office at 17 Cyber Hub, Gurugram 122002 (the "Vendor").
+
+1. Definitions
+1.1 "Services" means the design, development and maintenance of the Customer's inventory management software as described in Schedule A.
+1.2 "Fees" means the amounts payable under clause 2.
+
+2. Services and Fees
+2.1 The Vendor shall provide the Services to the Customer with reasonable skill and care.
+2.2 The Customer shall pay the Vendor a fee of Rs. 12,00,000 within thirty days of receiving each correct invoice.
+
+3. Term and Renewal
+3.1 This Agreement begins on 1 February 2026 and continues for three years.
+3.2 This Agreement renews automatically for successive three-year terms unless the Vendor gives written notice of non-renewal at least 180 days before the end of the then-current term.
+3.3 The Customer may terminate this Agreement at any time on seven days' notice. The Vendor may not terminate this Agreement except for the Customer's uncured payment default.
+
+4. Delay Damages
+4.1 For each day by which delivery of the Services is delayed beyond the agreed date, the Vendor shall pay the Customer two percent of the total Fees as liquidated damages, without any cap, whether or not the Customer has suffered any loss.
+
+5. Intellectual Property
+5.1 All software and deliverables created under this Agreement belong to the Customer upon payment.
+5.2 The Vendor keeps ownership of its pre-existing tools and grants the Customer a non-exclusive licence to use them with the deliverables.
+
+6. Indemnity
+6.1 The Vendor shall indemnify the Customer against every loss, claim, liability and expense arising from or related to the Services, without limit as to amount or time. The Customer gives no indemnity to the Vendor.
+
+7. Exclusivity and Non-Compete
+7.1 During the term and for five years after this Agreement ends, the Vendor shall not provide software services to any other retailer in India.
+
+8. Dispute Resolution
+8.1 All disputes arising out of this Agreement shall be finally settled by arbitration under the Arbitration and Conciliation Act, 1996, by a tribunal of three arbitrators, one appointed by each party and the third appointed by the two so appointed. The seat of arbitration shall be New Delhi and the language shall be English.
+
+9. Governing Law
+9.1 This Agreement is governed by the laws of India, and subject to clause 8 the courts at New Delhi shall have exclusive jurisdiction.
+
+10. General
+10.1 This Agreement is the entire agreement between the parties on its subject matter.
+10.2 Any amendment must be in writing and signed by both parties.
+
+Signed: ____________ (Customer)        Signed: ____________ (Vendor)

@@ -1,0 +1,22 @@
+
+===== contract_02 =====
+DETECTED I1 termination              names-problem=True  severity-ok=True  status=commercial_risk  cites=[]
+DETECTED I2 non_compete              names-problem=True  severity-ok=True  status=verified         cites=['Indian Contract Act s.27']
+DETECTED I3 penalty                  names-problem=True  severity-ok=False status=verified         cites=['Indian Contract Act s.74']
+Flagged clauses NOT in answer key (possible false positives, judge by hand): [('C5', 'Unreasonable restraint of trade')]
+
+===== contract_03 =====
+DETECTED I1 termination              names-problem=False severity-ok=True  status=commercial_risk  cites=[]
+DETECTED I2 penalty                  names-problem=True  severity-ok=True  status=commercial_risk  cites=['Indian Contract Act s.74']
+DETECTED I3 indemnity                names-problem=True  severity-ok=True  status=commercial_risk  cites=[]
+DETECTED I4 non_compete              names-problem=True  severity-ok=True  status=verified         cites=['Indian Contract Act s.27']
+DETECTED M1 missing_confidentiality  names-problem=True  severity-ok=True  status=rule_based       cites=[]
+Flagged clauses NOT in answer key (possible false positives, judge by hand): none
+
+===== TOTAL =====
+Detection (right clause flagged):         8/8
+Substance (names the actual problem):     7/8
+Severity matches answer key:              7/8
+Statutory issues with all statutes cited: 4/4
+Citation precision (cited in key):        4/4
+Possible false positives:                 1

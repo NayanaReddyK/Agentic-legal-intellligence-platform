@@ -1,0 +1,64 @@
+{
+  "contract": "contract_02.txt",
+  "planted_issues": [
+    {
+      "id": "I1",
+      "clause": "3",
+      "type": "termination",
+      "severity": "medium",
+      "basis": "commercial",
+      "keywords": [
+        "one-sided",
+        "unbalanced",
+        "imbalance",
+        "unequal",
+        "seven days",
+        "7 days",
+        "ninety days",
+        "90 days"
+      ],
+      "why": "Employer needs 7 days notice, employee 90 days and no early release",
+      "statute": []
+    },
+    {
+      "id": "I2",
+      "clause": "6",
+      "type": "non_compete",
+      "severity": "high",
+      "basis": "statutory",
+      "keywords": [
+        "non-compete",
+        "restraint",
+        "compete",
+        "competitor",
+        "post-employment",
+        "24 months",
+        "twenty-four"
+      ],
+      "why": "24-month post-employment restraint across India is void under s.27",
+      "statute": [
+        "Indian Contract Act s.27"
+      ]
+    },
+    {
+      "id": "I3",
+      "clause": "7",
+      "type": "penalty",
+      "severity": "high",
+      "basis": "statutory",
+      "keywords": [
+        "training",
+        "bond",
+        "penalty",
+        "irrespective",
+        "actual cost",
+        "repay"
+      ],
+      "why": "Fixed Rs 6 lakh payable irrespective of actual training cost is a penalty under s.74",
+      "statute": [
+        "Indian Contract Act s.74"
+      ]
+    }
+  ],
+  "note": "Clauses 4,5,8,9,10 are deliberately fine (controls): any issue flagged there is a possible false positive."
+}

@@ -1,0 +1,48 @@
+EMPLOYMENT AGREEMENT
+
+This Agreement is made on 2 February 2026 at Hyderabad between:
+
+(1) BRIGHTLEAF ANALYTICS PRIVATE LIMITED, a company incorporated under the Companies Act, 2013, having its registered office at 8 Banjara Hills Road, Hyderabad 500034 (the "Company"); and
+
+(2) MR. ROHAN IYER, residing at 41 Jubilee Hills, Hyderabad 500033 (the "Employee").
+
+1. Position and Duties
+1.1 The Employee is appointed as Senior Data Engineer and shall report to the Head of Engineering.
+1.2 The Employee shall perform the duties assigned from time to time and shall comply with the Company's policies.
+
+2. Remuneration
+2.1 The Company shall pay the Employee a gross annual remuneration of Rs. 18,00,000, payable in twelve equal monthly instalments on the last working day of each month.
+2.2 All payments are subject to deduction of tax at source as required by law.
+
+3. Termination
+3.1 The Company may terminate this Agreement by giving the Employee seven days' written notice, without assigning any reason.
+3.2 The Employee may terminate this Agreement only by giving the Company ninety days' written notice, and shall not be relieved earlier without the Company's written consent.
+
+4. Confidentiality
+4.1 The Employee shall keep confidential all non-public business, technical and financial information of the Company and shall use it only for the Company's purposes.
+4.2 This obligation continues for three years after the Employee leaves the Company, but does not apply to information that is public through no fault of the Employee or that must be disclosed by law.
+
+5. Exclusivity During Employment
+5.1 While employed by the Company, the Employee shall not take up any other employment or business without the Company's prior written consent.
+
+6. Post-Employment Restriction
+6.1 For a period of twenty-four months after the Employee's employment ends for any reason, the Employee shall not join, advise or work for any business in India that competes with the Company.
+
+7. Training Bond
+7.1 The Company will sponsor the Employee's advanced cloud certification programme.
+7.2 If the Employee resigns within twenty-four months from the date of this Agreement, the Employee shall pay the Company Rs. 6,00,000, irrespective of the actual cost of training incurred by the Company.
+
+8. Indemnity
+8.1 The Employee shall indemnify the Company against direct losses caused by the Employee's wilful misconduct or gross negligence, up to a maximum equal to the Employee's annual remuneration under clause 2.
+
+9. Dispute Resolution
+9.1 Any dispute arising out of this Agreement shall be finally settled by arbitration under the Arbitration and Conciliation Act, 1996. The tribunal shall consist of a sole arbitrator appointed by mutual consent of the parties. The seat of arbitration shall be Hyderabad and the language shall be English.
+
+10. Governing Law
+10.1 This Agreement is governed by the laws of India, and subject to clause 9 the courts at Hyderabad shall have exclusive jurisdiction.
+
+11. General
+11.1 This Agreement is the entire agreement between the parties on its subject matter.
+11.2 Any amendment must be in writing and signed by both parties.
+
+Signed: ____________ (Company)        Signed: ____________ (Employee)
