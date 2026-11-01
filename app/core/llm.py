@@ -8,8 +8,10 @@ _client = OpenAI(
     base_url=os.getenv("LLM_BASE_URL"),
 )
 MODEL = os.getenv("LLM_MODEL")
+REVIEW_MODEL = os.getenv("REVIEW_MODEL") or MODEL
 
-def ask(prompt: str, system: str = "", max_tokens: int = 1024, retries: int = 3) -> str:
+
+def ask(prompt: str, system: str = "", max_tokens: int = 2048, retries: int = 3, model: str = None) -> str:
     messages = []
     if system:
         messages.append({"role": "system", "content": system})
@@ -18,7 +20,7 @@ def ask(prompt: str, system: str = "", max_tokens: int = 1024, retries: int = 3)
     for attempt in range(retries):
         try:
             resp = _client.chat.completions.create(
-                model=MODEL, messages=messages,
+                model=model or MODEL, messages=messages,
                 max_tokens=max_tokens, temperature=0.1,
             )
             return resp.choices[0].message.content

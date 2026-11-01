@@ -39,7 +39,12 @@ CLAUSES:
     out = extract_json(cached_ask(prompt, system=SYSTEM, max_tokens=4096))
     by_id = {o["id"]: o for o in out}
     for c in clauses:
-        c["analysis"] = by_id.get(c["id"], {"type": "other", "summary": "", "obligations": [], "amounts": [], "periods": []})
+        a = by_id.get(c["id"], {"type": "other", "summary": ""})
+        for k in ("obligations", "amounts", "periods"):
+            a[k] = a.get(k) or []
+        if a.get("type") not in CLAUSE_TYPES:
+            a["type"] = "other"
+        c["analysis"] = a
     return clauses
 
 

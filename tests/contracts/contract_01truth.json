@@ -8,7 +8,7 @@
     {"id": "I3", "clause": "6", "type": "indemnity", "severity": "high",
      "why": "Unlimited, one-sided indemnity with no cap or time limit", "statute": ["Indian Contract Act s.124", "Indian Contract Act s.125"]},
     {"id": "I4", "clause": "8", "type": "arbitration", "severity": "high",
-     "why": "No seat, rules or number of arbitrators; arbitrator appointed unilaterally by the Company", "statute": ["Arbitration and Conciliation Act s.7", "Arbitration and Conciliation Act s.11", "Arbitration and Conciliation Act s.12"]},
+     "why": "No seat, rules or number of arbitrators; arbitrator appointed unilaterally by the Company","statute": ["Arbitration and Conciliation Act s.10", "Arbitration and Conciliation Act s.11", "Arbitration and Conciliation Act s.12", "Arbitration and Conciliation Act s.20"]},
     {"id": "I5", "clause": "3", "type": "termination", "severity": "medium",
      "why": "Company may terminate without notice; Founder needs six months' notice (one-sided)", "statute": []},
     {"id": "M1", "clause": null, "type": "missing_governing_law", "severity": "medium",
