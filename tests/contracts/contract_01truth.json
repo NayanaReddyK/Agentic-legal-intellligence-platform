@@ -1,0 +1,19 @@
+{
+  "contract": "contract_01.txt",
+  "planted_issues": [
+    {"id": "I1", "clause": "4", "type": "non_compete", "severity": "high",
+     "why": "3-year post-exit non-compete across India is void to that extent", "statute": ["Indian Contract Act s.27"]},
+    {"id": "I2", "clause": "5", "type": "penalty", "severity": "high",
+     "why": "Fixed Rs 50 lakh 'irrespective of actual loss' is a penalty; only reasonable compensation recoverable", "statute": ["Indian Contract Act s.74"]},
+    {"id": "I3", "clause": "6", "type": "indemnity", "severity": "high",
+     "why": "Unlimited, one-sided indemnity with no cap or time limit", "statute": ["Indian Contract Act s.124", "Indian Contract Act s.125"]},
+    {"id": "I4", "clause": "8", "type": "arbitration", "severity": "high",
+     "why": "No seat, rules or number of arbitrators; arbitrator appointed unilaterally by the Company", "statute": ["Arbitration and Conciliation Act s.7", "Arbitration and Conciliation Act s.11", "Arbitration and Conciliation Act s.12"]},
+    {"id": "I5", "clause": "3", "type": "termination", "severity": "medium",
+     "why": "Company may terminate without notice; Founder needs six months' notice (one-sided)", "statute": []},
+    {"id": "M1", "clause": null, "type": "missing_governing_law", "severity": "medium",
+     "why": "No governing law or jurisdiction clause", "statute": []},
+    {"id": "M2", "clause": null, "type": "missing_confidentiality", "severity": "medium",
+     "why": "No confidentiality clause", "statute": []}
+  ]
+}
