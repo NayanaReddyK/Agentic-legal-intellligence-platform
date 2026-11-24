@@ -1,0 +1,235 @@
+[
+  {
+    "clause_id": "C3",
+    "clause_heading": "Term And Renewal",
+    "type": "termination",
+    "has_issue": true,
+    "basis": "commercial",
+    "severity": "high",
+    "issue": "Unilateral termination and renewal terms",
+    "explanation": "Distributor cannot terminate during the first five years, while Supplier can terminate anytime with only 30\u2011day notice. After the initial term, Supplier has no termination right and renewal is automatic unless Distributor gives 12\u2011month notice, creating a one\u2011sided imbalance.",
+    "suggested_fix": "Grant reciprocal termination rights with reasonable notice periods and balance renewal provisions for both parties.",
+    "confidence": "high",
+    "supporting_quote": "",
+    "evidence": {
+      "Specific Relief Act s.15": "Specific Relief Act 1963, section 15: Who may obtain specific performance\n         1[(fa) when a limited liability partnership has entered into a contract and subsequently becomes\n   amalgamated with another limited liability partnership, the new limited liability partnership which\n    arises out of the amalgamation.]\n        (g) when a company has entered into a contract and subsequently becomes amalgamated with\n    another company, the new company which arises out of the amalgamation;\n        (h) when the promoters of a company have, before its incorporation, entered into a contract for the\n    purposes of the company, and such contract is warranted by the terms of the incorporation, the\n   company:\n       Provided that the company has accepted the contract and has communicated such acceptance to the\n    other party to the contract.\n",
+      "Arbitration and Conciliation Act s.76": "Arbitration and Conciliation Act 1996, section 76: Termination of conciliation proceedings\n76. Termination of conciliation proceedings.\u2014The conciliation proceedings shall be terminated\u2014\n\n        (a) by the signing of the settlement agreement by the parties, on the date of the agreement; or\n\n        (b) by a written declaration of the conciliator, after consultation with the parties, to the effect that\n    further efforts at conciliation are no longer justified, on the date of the declaration; or\n\n         (c) by a written declaration of the parties addressed to the conciliator to the effect that the\n    conciliation proceedings are terminated, on the date of the declaration; or\n\n        (d) by a written declaration of a party to the other party and the conciliator, if appointed, to the\n    effect that the conciliation proceedings are terminated, on the date of the declaration.",
+      "Indian Contract Act s.5": "Indian Contract Act 1872, section 5: Revocation of proposals and acceptances\n5. Revocation of proposals and acceptances.\u2014A proposal may be revoked at any time before the\ncommunication of its acceptance is complete as against the proposer, but not afterwards.\n\n   An acceptance may be revoked at any time before the communication of the acceptance is complete\nas against the acceptor, but not afterwards.\n\n                                                   Illustration\n\n   A proposes, by a letter sent by post, to sell his house to B.\n\n   B accepts the proposal by a letter sent by post.\n\n   A may revoke his proposal at any time before or at the moment when B posts his letter of acceptance, but not afterwards.\n\n   B may revoke his acceptance at any time before or at the moment when the letter communicating it reaches A, but not\nafterwards."
+    },
+    "citations": [],
+    "retrieved": [
+      "Specific Relief Act s.15",
+      "Arbitration and Conciliation Act s.76",
+      "Indian Contract Act s.5"
+    ],
+    "dropped_citations": [],
+    "quote_verified": false,
+    "overstated": false,
+    "claim_matches_clause": true,
+    "reviewer_note": "Accurate description of the clause's unilateral termination and renewal mechanics.",
+    "status": "commercial_risk"
+  },
+  {
+    "clause_id": "C4",
+    "clause_heading": "Minimum Purchase",
+    "type": "penalty_liquidated_damages",
+    "has_issue": true,
+    "basis": "statutory",
+    "severity": "high",
+    "issue": "Unreasonable liquidated damages clause",
+    "explanation": "The clause imposes a fixed Rs. 10,00,000 penalty regardless of actual loss, which may be deemed a penalty under Indian law and unenforceable.",
+    "suggested_fix": "Limit damages to actual loss or a reasonable pre\u2011estimate, or provide a calculation method.",
+    "confidence": "high",
+    "supporting_quote": "reasonable compensation not exceeding the amount so named or, as the case may be, the penalty stipulated for.",
+    "evidence": {
+      "Indian Contract Act s.74": "Indian Contract Act 1872, section 74: Compensation for breach of contract where penalty stipulated for\n74. Compensation for breach of contract where penalty stipulated for.\u20141[When a contract has\nbeen broken, if a sum is named in the contract as the amount to be paid in case of such breach, or if the\ncontract contains any other stipulation by way of penalty, the party complaining of the breach is entitled,\nwhether or not actual damage or loss is proved to have been caused thereby, to receive from the party who\nhas broken the contract reasonable compensation not exceeding the amount so named or, as the case maybe, the penalty stipulated for.       \n   Explanation.\u2014A stipulation for increased interest from the date of default may be a stipulation by\nway of penalty.]\n   Exception.\u2014When any person enters into any bail-bond, recognizance or other instrument of the\nsame nature, or, under the provisions of any law, or under the orders of the 2[Central Government] or of\nany 3[State Government], gives any bond for the performance of any public duty or act in which the\npublic are interested, he shall be liable, upon breach of the condition of any such instrument, to pay the\nwhole sum mentione",
+      "Indian Contract Act s.133": "Indian Contract Act 1872, section 133: Discharge of surety by variance in terms of contract\nby a commission on the goods sold by him and not by a fixed salary. A is not liable for subsequent misconduct of B.\n\n     (d) A gives to C a continuing guarantee to the extent of 3,000 rupees for any oil supplied by C to B on credit. Afterwards B\nbecomes embarrassed, and, without the knowledge of A, B and C contract that C shall continue to supply B with oil for ready\nmoney, and that the payments shall be applied to the then, existing debts between B and C. A is not liable on his guarantee for\nany goods supplied after: this new arrangement.\n\n     (e) C contracts to lend B 5,000 rupees on the 1st March. A guarantees repayment. C pays the 5,000 rupees to B on the 1st\nJanuary. A is discharged from his liability, as the contract has been varied, inasmuch as C might sue B for the money before the\n1st of March.\n"
+    },
+    "citations": [
+      {
+        "act": "Indian Contract Act",
+        "section": "74",
+        "title": "Compensation for breach of contract where penalty stipulated for",
+        "ref": "Indian Contract Act s.74",
+        "verdict": "supports"
+      }
+    ],
+    "retrieved": [
+      "Indian Contract Act s.74",
+      "Indian Contract Act s.133"
+    ],
+    "dropped_citations": [],
+    "quote_verified": true,
+    "overstated": false,
+    "claim_matches_clause": true,
+    "reviewer_note": "Section 74 confirms that fixed sums are treated as reasonable compensation, not penalties, supporting the legal analysis.",
+    "status": "verified"
+  },
+  {
+    "clause_id": "C5",
+    "clause_heading": "Competing Products During The Term",
+    "type": "non_compete",
+    "has_issue": true,
+    "basis": "statutory",
+    "severity": "low",
+    "issue": "Unreasonable restraint of trade",
+    "explanation": "The clause bars the distributor from selling any competing products in Karnataka during the term, constituting a restraint of trade that is void under Indian law.",
+    "suggested_fix": "Narrow the restriction to specific product categories, define a reasonable geographic scope, and provide a notice period for any changes.",
+    "confidence": "low",
+    "supporting_quote": "Every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void.",
+    "evidence": {
+      "Indian Contract Act s.27": "Indian Contract Act 1872, section 27: Agreement in restraint of trade, void\n27. Agreement in restraint of trade, void.\u2014Every agreement by which any one is restrained from\nexercising a lawful profession, trade or business of any kind, is to that extent void.\n    Exception 1.\u2014Saving of agreement not to carry on business of which good-will is sold.\u2014One\nwho sells the good-will of a business may agree with the buyer to refrain from carrying on a similarbusiness, within specified local limits, so long as the buyer, or any person deriving title to the good-will\nfrom him, carries on a like business therein, provided that such limits appear to the Court reasonable,\nregard being had to the nature of the business.\n    1*               *                   *                   *       *.",
+      "Indian Contract Act s.30": "Indian Contract Act 1872, section 30: Agreements by way of wager void\n30. Agreements by way of wager void.\u2014Agreements by way of wager are void; and no suit shall be\nbrought for recovering anything alleged to be won on any wager, or entrusted to any person to abide the\nresult of any game or other uncertain event on which any wager is made.\n   Exception in favour of certain prizes for horse-racing.\u2014This section shall not be deemed to\nrender unlawful a subscription or contribution, or agreement to subscribe or contribute, made or entered\ninto for or toward any plate, prize or sum of money, of the value or amount of five hundred rupees or\nupwards, to be awarded to the winner or winners of any horse-race.\n    Section 294A of the Indian Penal Code not affected.\u2014Nothing in this section shall be deemed to\nlegalize any transaction connected with horse-racing, to which the provisions of section 294A of the\nIndian Penal Code (45 of 1860) apply.\n\n                            CHAPTER III\n\n                      OF CONTINGENT CONTRACTS"
+    },
+    "citations": [
+      {
+        "act": "Indian Contract Act",
+        "section": "27",
+        "title": "Agreement in restraint of trade, void",
+        "ref": "Indian Contract Act s.27",
+        "verdict": "related"
+      }
+    ],
+    "retrieved": [
+      "Indian Contract Act s.27",
+      "Indian Contract Act s.30"
+    ],
+    "dropped_citations": [],
+    "quote_verified": true,
+    "overstated": true,
+    "claim_matches_clause": true,
+    "reviewer_note": "Claim asserts voidness, but s.27 exceptions and case law on ancillary restraints make this conclusion contested, not absolute.",
+    "status": "disputed",
+    "original_severity": "high"
+  },
+  {
+    "clause_id": "C6",
+    "clause_heading": "Post-Termination Restriction",
+    "type": "non_compete",
+    "has_issue": true,
+    "basis": "statutory",
+    "severity": "high",
+    "issue": "Void restraint of trade",
+    "explanation": "Clause bars distributor from dealing in any competing packaged food products across India for 2 years, a restraint of trade void under Indian law.",
+    "suggested_fix": "Limit restriction to specific products, territory, or include a reasonable duration and scope.",
+    "confidence": "high",
+    "supporting_quote": "\"Every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void.\"",
+    "evidence": {
+      "Indian Contract Act s.27": "Indian Contract Act 1872, section 27: Agreement in restraint of trade, void\n27. Agreement in restraint of trade, void.\u2014Every agreement by which any one is restrained from\nexercising a lawful profession, trade or business of any kind, is to that extent void.\n    Exception 1.\u2014Saving of agreement not to carry on business of which good-will is sold.\u2014One\nwho sells the good-will of a business may agree with the buyer to refrain from carrying on a similarbusiness, within specified local limits, so long as the buyer, or any person deriving title to the good-will\nfrom him, carries on a like business therein, provided that such limits appear to the Court reasonable,\nregard being had to the nature of the business.\n    1*               *                   *                   *       *.",
+      "Indian Contract Act s.38": "Indian Contract Act 1872, section 38: Effect of refusal to accept offer of performance\n38. Effect of refusal to accept offer of performance.\u2014Where a promisor has made an offer of\nperformance to the promisee, and the offer has not been accepted, the promisor is not responsible for\nnon-performance, nor does he thereby lose his rights under the contract.\n   Every such offer must fulfil the following conditions:\u2014\n\n        (1) it must be unconditional;\n\n        (2) it must be made at a proper time and place, and under such circumstances that the person to\nwhom it is made may have a reasonable opportunity of ascertaining that the person by whom it is made is\nable and willing there and then to do the whole of what he is bound by his promise to do;\n\n        (3)  if the offer  is an offer to deliver anything to the promisee, the promisee must have a\n    reasonable opportunity of seeing that the thing offered is the thing which the promisor is bound by his\n    promise to deliver.\n\n   An offer to one of several joint promisees has the same legal consequences as an offer to all of them.\n                                                   Illustration\n\n   A contracts to deliver to B at his wareh"
+    },
+    "citations": [
+      {
+        "act": "Indian Contract Act",
+        "section": "27",
+        "title": "Agreement in restraint of trade, void",
+        "ref": "Indian Contract Act s.27",
+        "verdict": "supports"
+      }
+    ],
+    "retrieved": [
+      "Indian Contract Act s.27",
+      "Indian Contract Act s.38"
+    ],
+    "dropped_citations": [],
+    "quote_verified": true,
+    "overstated": false,
+    "claim_matches_clause": true,
+    "reviewer_note": "Post-termination restraint across India for 2 years is generally void under s.27 as it exceeds reasonable limits.",
+    "status": "verified"
+  },
+  {
+    "clause_id": "C7",
+    "clause_heading": "Indemnity",
+    "type": "indemnity",
+    "has_issue": true,
+    "basis": "commercial",
+    "severity": "low",
+    "issue": "Missing notice period for indemnity claims",
+    "explanation": "The clause does not specify how or when the indemnified party must notify the indemnifying party of a third\u2011party claim, potentially delaying or preventing timely indemnification.",
+    "suggested_fix": "Add a notice requirement specifying time and method for notifying indemnifying party of third\u2011party claims.",
+    "confidence": "high",
+    "supporting_quote": "",
+    "evidence": {
+      "Indian Contract Act s.124": "Indian Contract Act 1872, section 124: \u201cContract of indemnity\u201d defined\n124.\u201cContract of indemnity\u201d defined.\u2014A contract by which one party promises to save the other\nfrom loss caused to him by the conduct of the promisor himself, or by the conduct of any other person, is\ncalled a \u201ccontract of indemnity\u201d.\n\n                                                   Illustration\n\n   A contracts to indemnify B against the consequences of any proceedings which C may take against B in respect of a certain\nsum of 200 rupees. This is a contract of indemnity.",
+      "Indian Contract Act s.125": "Indian Contract Act 1872, section 125: Rights of indemnity-holder when sued\n125.Rights of indemnity-holder when sued.\u2014The promisee in a contract of indemnity, acting\nwithin the scope of his authority, is entitled to recover from the promisor\u2014\n\n        (1) all damages which he may be compelled to pay in any suit in respect of any matter to which\n    the promise to indemnify applies;\n\n        (2) all costs which he may be compelled to pay in any such suit if, in bringing or defending it, he\n    did not contravene the orders of the promisor, and acted as it would have been prudent for him to act    in the absence of any contract of indemnity, or if the promisor authorized him to bring or defend the\n     suit;\n\n        (3) all sums which he may have paid under the terms of any compromise of any such suit, if the\n   compromise was not contrary to the orders of the promisor, and was one which it would have been\n    prudent for the promisee to make in the absence of any contract of indemnity, or if the promisor\n    authorized him to compromise the suit.",
+      "Indian Contract Act s.145": "Indian Contract Act 1872, section 145: Implied promise to indemnify surety\n145.Implied promise to indemnify surety.\u2014In every contract of guarantee there is an implied\npromise by the principal debtor to indemnify the surety, and the surety is entitled to recover from the\nprincipal debtor whatever sum he has rightfully paid under the guarantee, but, no sums which he has paid\nwrongfully.\n\n                                                  Illustrations\n\n    (a)B is indebted to C, and A is surety for the debt. C demands payment from A, and on his refusal sues him for the amount.\nA defends the suit, having reasonable grounds for doing so, but is compelled to pay the amount of the debt with costs. He can\nrecover from B the amount paid by him for costs, as well as the principal debt.\n\n    (b)C lends B a sum of money, and A, at the request of B, accepts a bill of exchange drawn by B upon A to secure the\namount. C, the holder of the bill, demands payment of it from A, and, on A\u2019s refusal to pay, sues him upon the bill. A, not having\nreasonable grounds for so doing, defends the suit, and has to pay the amount of the bill and costs. He can recover from B the\namount of the bill, but not the sum"
+    },
+    "citations": [],
+    "retrieved": [
+      "Indian Contract Act s.124",
+      "Indian Contract Act s.125",
+      "Indian Contract Act s.145"
+    ],
+    "dropped_citations": [],
+    "quote_verified": false,
+    "overstated": false,
+    "claim_matches_clause": true,
+    "reviewer_note": "Correctly identifies the absence of a notice mechanism in the indemnity clause.",
+    "status": "commercial_risk"
+  },
+  {
+    "clause_id": "C8",
+    "clause_heading": "Dispute Resolution",
+    "type": "arbitration",
+    "has_issue": true,
+    "basis": "commercial",
+    "severity": "low",
+    "issue": "Missing notice period for dispute",
+    "explanation": "The clause does not require the initiating party to give written notice to the other party before arbitration, which is a common commercial practice to allow the other party to respond or attempt settlement.",
+    "suggested_fix": "Add a notice requirement, e.g., \"The party initiating arbitration must give written notice to the other party within 10 days of the dispute arising.\"",
+    "confidence": "high",
+    "supporting_quote": "",
+    "evidence": {
+      "Arbitration and Conciliation Act s.7": "Arbitration and Conciliation Act 1996, section 7: Arbitration agreement\n7. Arbitration agreement.\u2014(1) In this Part, \u201carbitration agreement\u201d means an agreement by the\nparties to submit to arbitration all or certain disputes which have arisen or which may arise between them\nin respect of a defined legal relationship, whether contractual or not.\n\n    (2) An arbitration agreement may be in the form of an arbitration clause in a contract or in the form of\na separate agreement.\n\n    (3) An arbitration agreement shall be in writing.\n\n    (4) An arbitration agreement is in writing if it is contained in\u2014\n\n        (a) a document signed by the parties;\n        (b) an exchange of letters, telex, telegrams or other means of telecommunication 1[including\n   communication through electronic means] which provide a record of the agreement; or\n         (c) an exchange of statements of claim and defence in which the existence of the agreement is\n    alleged by one party and not denied by the other.\n\n    (5) The reference in a contract to a document containing an arbitration clause constitutes an\narbitration agreement if the contract is in writing and the reference is such as to make that arbitration\n",
+      "Arbitration and Conciliation Act s.10": "Arbitration and Conciliation Act 1996, section 10: Number of arbitrators\n10. Number of arbitrators.\u2014(1) The parties are free to determine the number of arbitrators,\nprovided that such number shall not be an even number.\n\n    (2) Failing the determination referred to in sub-section (1), the arbitral tribunal shall consist of a sole\narbitrator.",
+      "Arbitration and Conciliation Act s.11": "Arbitration and Conciliation Act 1996, section 11: Appointment of arbitrators\n11. Appointment of arbitrators.\u2014(1) A person of any nationality may be an arbitrator, unless\notherwise agreed by the parties.\n\n    (2) Subject to sub-section (6), the parties are free to agree on a procedure for appointing the arbitrator\nor arbitrators.\n\n    (3) Failing any agreement referred to in sub-section (2), in an arbitration with three arbitrators, each\nparty shall appoint one arbitrator, and the two appointed arbitrators shall appoint the third arbitrator who\nshall act as the presiding arbitrator.\n\n    (4) If the appointment procedure in sub-section (3) applies and\u2014\n\n        (a) a party fails to appoint an arbitrator within thirty days from the receipt of a request to do so\n   from the other party; or\n\n        (b) the two appointed arbitrators fail to agree on the third arbitrator within thirty days from the\n    date of their appointment,",
+      "Arbitration and Conciliation Act s.12": "Arbitration and Conciliation Act 1996, section 12: Grounds for challenge\n12. Grounds for challenge.\u20144[(1) When a person is approached in connection with his possible\nappointment as an arbitrator, he shall disclose in writing any circumstances,\u2014\n        (a) such as the existence either direct or indirect, of any past or present relationship with or\n    interest in any of the parties or in relation to the subject-matter in dispute, whether financial, business,\n    professional or other kind, which is likely to give rise to justifiable doubts as to his independence or\n    impartiality; and\n        (b) which are likely to affect his ability to devote sufficient time to the arbitration and in\n    particular his ability to complete the entire arbitration within a period of twelve months.\n    Explanation 1.\u2014The grounds stated in the Fifth Schedule shall guide in determining whether\ncircumstances exist which give rise to justifiable doubts as to the independence or impartiality of an\narbitrator.\n    Explanation 2.\u2014The disclosure shall be made by such person in the form specified in the Sixth\nSchedule.]\n    (2) An arbitrator, from the time of his appointment and throughout the arbitral proc",
+      "Arbitration and Conciliation Act s.20": "Arbitration and Conciliation Act 1996, section 20: Place of arbitration\n20. Place of arbitration.\u2014(1) The parties are free to agree on the place of arbitration.\n    (2) Failing any agreement referred to in sub-section (1), the place of arbitration shall be determined\nby the arbitral tribunal having regard to the circumstances of the case, including the convenience of the\nparties.\n    (3) Notwithstanding sub-section (1) or sub-section (2), the arbitral tribunal may, unless otherwise\nagreed by the parties, meet at anyplace it considers appropriate for consultation among its members, for\nhearing witnesses, experts or the parties, or for inspection of documents, goods or other property.",
+      "Arbitration and Conciliation Act s.87": "Arbitration and Conciliation Act 1996, section 87: Effect of arbitral and related court proceedings commenced prior to 23rd October, 2015\nRules in cases where a dispute arises in the context of international commercial relations and the parties\nseek an amicable settlement of that dispute by recourse to conciliation;\n\n   AND WHEREAS the said Model Law and Rules make significant contribution to the establishment of a\nunified  legal framework  for  the  fair and  efficient settlement of disputes  arising  in  international\ncommercial relations;\n\n   AND WHEREAS it is expedient to make law respecting arbitration and conciliation, taking into account\nthe aforesaid Model Law and Rules;\n\n   BE it enacted by Parliament in the Forty-seventh Year of the Republic of India as follows:\u2014\n\n                                    PRELIMINARY                   1. Short  title, extent and commencement.\u2014(1) This Act may be called the Arbitration and\nConciliation Act, 1996.\n\n    (2) It extends to the whole of India:\n    1*               *                   *                   *                   *\n    (3) It shall come into force on such date2 as the Central Government may, by notification in the\nOfficial "
+    },
+    "citations": [],
+    "retrieved": [
+      "Arbitration and Conciliation Act s.7",
+      "Arbitration and Conciliation Act s.10",
+      "Arbitration and Conciliation Act s.11",
+      "Arbitration and Conciliation Act s.12",
+      "Arbitration and Conciliation Act s.20",
+      "Arbitration and Conciliation Act s.87"
+    ],
+    "dropped_citations": [],
+    "quote_verified": false,
+    "overstated": false,
+    "claim_matches_clause": true,
+    "reviewer_note": "Correctly notes the lack of a pre-arbitration notice requirement in the dispute resolution clause.",
+    "status": "commercial_risk"
+  },
+  {
+    "clause_id": null,
+    "clause_heading": "(missing)",
+    "type": "missing_governing_law",
+    "has_issue": true,
+    "severity": "medium",
+    "issue": "Missing governing law clause",
+    "explanation": "No governing law or jurisdiction clause. Add one naming Indian law and a court or arbitral seat.",
+    "suggested_fix": "No governing law or jurisdiction clause. Add one naming Indian law and a court or arbitral seat.",
+    "confidence": "high",
+    "citations": [],
+    "retrieved": [],
+    "status": "rule_based"
+  },
+  {
+    "clause_id": null,
+    "clause_heading": "(missing)",
+    "type": "missing_confidentiality",
+    "has_issue": true,
+    "severity": "medium",
+    "issue": "Missing confidentiality clause",
+    "explanation": "No confidentiality clause. Add obligations covering business information, with exceptions and a survival period.",
+    "suggested_fix": "No confidentiality clause. Add obligations covering business information, with exceptions and a survival period.",
+    "confidence": "high",
+    "citations": [],
+    "retrieved": [],
+    "status": "rule_based"
+  }
+]

@@ -1,5 +1,6 @@
 from app.core.cache import cached_ask
 from app.core.jsonutil import extract_json
+import re
 
 SYSTEM = (
     "You are a careful legal document analyst for Indian commercial contracts. "
@@ -48,12 +49,17 @@ CLAUSES:
     return clauses
 
 
+GOV_RE = re.compile(r"governed by|governing law|laws? of india|exclusive jurisdiction|jurisdiction of (?:the )?courts?|subject to the jurisdiction", re.I)
+CONF_RE = re.compile(r"confidential", re.I)
+
+
 def find_missing(clauses: list[dict], metadata: dict) -> list[str]:
-    """Pure code, no LLM: which expected clause types are absent?"""
+    """Pure code, no LLM: which expected clause types are absent? Checks the text itself, not model metadata."""
+    body = " ".join(c["text"] for c in clauses)
     present = {c["analysis"]["type"] for c in clauses}
     missing = []
-    if "governing_law" not in present and not metadata.get("governing_law"):
+    if "governing_law" not in present and not GOV_RE.search(body):
         missing.append("governing_law")
-    if "confidentiality" not in present:
+    if "confidentiality" not in present and not CONF_RE.search(body):
         missing.append("confidentiality")
     return missing

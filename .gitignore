@@ -4,3 +4,5 @@ data/
 __pycache__/
 chroma_db/
 llm_cache/
+legal_assistant.db
+uploads/
