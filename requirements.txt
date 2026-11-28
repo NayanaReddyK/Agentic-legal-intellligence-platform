@@ -7,6 +7,7 @@ chromadb
 sentence-transformers
 rank-bm25
 pymupdf
+pyarrow
 python-docx
 streamlit
 openai
