@@ -16,7 +16,6 @@ from typing import Any
 
 import chromadb
 import pyarrow.parquet as pq
-from sentence_transformers import SentenceTransformer
 
 
 DB_PATH = "chroma_db"
@@ -75,8 +74,12 @@ def _chunks(text: str, limit: int = MAX_CHARS) -> list[str]:
     return chunks
 
 
-def _stable_id(act_id: str, act_title: str, section: str, chunk_no: int) -> str:
-    identity = f"{act_id}|{act_title}|{section}|{chunk_no}"
+def _stable_id(
+    act_id: str, source_chunk_id: str, act_title: str, section: str, chunk_no: int
+) -> str:
+    # chunk_id is essential: the corpus can contain multiple records with the
+    # same act_id and section_number (including repeated section numbers).
+    identity = f"{act_id}|{source_chunk_id}|{act_title}|{section}|{chunk_no}"
     digest = hashlib.sha1(identity.encode("utf-8")).hexdigest()[:16]
     return f"vaquill-{digest}-{chunk_no}"
 
@@ -101,17 +104,42 @@ def ingest(
     text_col = _column(columns, "text", "section_text", "body", "provision_text", required=True)
     section_col = _column(columns, "section_number", "section", "provision_number", required=True)
     act_id_col = _column(columns, "act_id", "instrument_id", "document_id")
+    source_chunk_col = _column(columns, "chunk_id")
+    chapter_col = _column(columns, "chapter", "chapter_number")
     section_title_col = _column(columns, "section_title", "provision_title", "heading")
     year_col = _column(columns, "year", "enactment_year")
     state_col = _column(columns, "state", "jurisdiction")
     act_status_col = _column(columns, "act_status", "status")
     section_status_col = _column(columns, "section_status", "provision_status")
+    in_force_col = _column(columns, "in_force")
     source_col = _column(columns, "source_url", "source", "url")
     publisher_col = _column(columns, "source_publisher", "publisher")
+
+    columns_to_read = sorted({
+        column
+        for column in (
+            act_col,
+            None if dry_run else text_col,
+            section_col,
+            act_id_col,
+            source_chunk_col,
+            chapter_col,
+            section_title_col,
+            year_col,
+            state_col,
+            act_status_col,
+            section_status_col,
+            in_force_col,
+            source_col,
+            publisher_col,
+        )
+        if column is not None
+    })
 
     matchers = [filter_text.casefold() for filter_text in title_filters]
     excluded_statuses = {"repealed", "spent", "superseded", "repealed_in_part"}
     count = 0
+    matched_records = 0
     skipped_obsolete = 0
     model: SentenceTransformer | None = None
     collection = None
@@ -125,6 +153,8 @@ def ingest(
             pending_ids, pending_docs, pending_metas = [], [], []
             return
         if model is None:
+            from sentence_transformers import SentenceTransformer
+
             model = SentenceTransformer(EMBED_MODEL)
         if collection is None:
             client = chromadb.PersistentClient(path=DB_PATH)
@@ -145,7 +175,7 @@ def ingest(
         )
         pending_ids, pending_docs, pending_metas = [], [], []
 
-    for batch in parquet.iter_batches(batch_size=2048):
+    for batch in parquet.iter_batches(batch_size=2048, columns=columns_to_read):
         for row in batch.to_pylist():
             act_title = _value(row, act_col)
             if not act_title or not any(term in act_title.casefold() for term in matchers):
@@ -161,28 +191,44 @@ def ingest(
                 continue
 
             section = _value(row, section_col)
+            if not section:
+                continue
+            matched_records += 1
+            if dry_run:
+                continue
+
             body = _value(row, text_col)
-            if not section or not body:
+            if not body:
                 continue
             section_title = _value(row, section_title_col, act_title)
             year = _value(row, year_col)
             act_id = _value(row, act_id_col, act_title)
+            source_chunk_id = _value(row, source_chunk_col, f"{act_id}-{section}")
+            chapter = _value(row, chapter_col)
             jurisdiction = _value(row, state_col, "central")
             header = f"{act_title} {year}, section {section}: {section_title}".strip()
-            pieces = _chunks(f"{header}\n{body}")
+            # Open India Law's current `text` values already include an Act,
+            # chapter, and section header. Avoid prepending a duplicate header.
+            source_text = body if body.startswith("Act:") else f"{header}\n{body}"
+            pieces = _chunks(source_text)
 
             for chunk_no, piece in enumerate(pieces):
-                pending_ids.append(_stable_id(act_id, act_title, section, chunk_no))
+                pending_ids.append(
+                    _stable_id(act_id, source_chunk_id, act_title, section, chunk_no)
+                )
                 pending_docs.append(piece)
                 pending_metas.append({
                     "act": act_title,
                     "act_id": act_id,
+                    "chunk_id": source_chunk_id,
+                    "chapter": chapter,
                     "year": year,
                     "section": section,
                     "title": section_title,
                     "jurisdiction": jurisdiction,
                     "act_status": act_status,
                     "section_status": section_status,
+                    "in_force": _value(row, in_force_col),
                     "source_url": _value(row, source_col),
                     "source_publisher": _value(row, publisher_col),
                     "dataset": "vaquill-open-india-law",
@@ -194,7 +240,10 @@ def ingest(
 
     flush()
     if dry_run:
-        print(f"Dry run: selected {count} chunks; no embeddings or database writes made.")
+        print(
+            f"Dry run: matched {matched_records} source records; "
+            "no embeddings or database writes made."
+        )
     else:
         size = collection.count() if collection is not None else 0
         print(f"Upserted {count} chunks into {collection_name}. Collection size: {size}")
